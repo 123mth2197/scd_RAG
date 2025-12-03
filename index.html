@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SCD RAG Assistant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <h1>Sickle Cell Disease RAG Assistant</h1>
+      <p>Ask guideline-based clinical questions. Answers are grounded in your uploaded SCD guideline.</p>
+    </header>
+
+    <main class="app-main">
+      <div class="card">
+        <label for="question" class="label">Enter your question</label>
+        <textarea
+          id="question"
+          class="textarea"
+          placeholder="e.g. What are the prophylactic measures for children with sickle cell disease?"
+          rows="4"
+        ></textarea>
+
+        <button id="ask-btn" class="button">Ask</button>
+
+        <div id="status" class="status"></div>
+
+        <div class="answer-section">
+          <h2>Answer</h2>
+          <div id="answer" class="answer-box"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="app-footer">
+      <p>Powered by Gemini, Pinecone, and your SCD guideline. Not a substitute for clinical judgement.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
