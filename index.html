@@ -23,12 +23,20 @@
           rows="4"
         ></textarea>
 
-        <button id="ask-btn" class="button">Ask</button>
+        <div class="button-row">
+          <button id="ask-btn" class="button">Ask</button>
+          <button id="reset-btn" class="button button-secondary">Reset conversation</button>
+        </div>
 
         <div id="status" class="status"></div>
 
+        <div class="rewritten-section">
+          <h2>Rewritten question (used for RAG)</h2>
+          <div id="rewritten-question" class="rewritten-box"></div>
+        </div>
+
         <div class="answer-section">
-          <h2>Answer</h2>
+          <h2>Question + Answer</h2>
           <div id="answer" class="answer-box"></div>
         </div>
       </div>
