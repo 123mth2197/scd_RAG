@@ -3,12 +3,12 @@
 // ------------------------------
 
 // For local dev:
-const API_ASK_URL = "http://localhost:8000/ask";
-const API_RESET_URL = "http://localhost:8000/reset";
+//const API_ASK_URL = "http://localhost:8000/ask";
+//const API_RESET_URL = "http://localhost:8000/reset";
 
 // If you expose via ngrok, just replace the base URL above, e.g.:
-// const API_ASK_URL = "https://your-ngrok-url.ngrok-free.app/ask";
-//const API_URL = "https://nonnegligible-dovelike-emiko.ngrok-free.dev/ask";
+const API_ASK_URL = "https://your-ngrok-url.ngrok-free.app/ask";
+const API_RESET_URL = "https://nonnegligible-dovelike-emiko.ngrok-free.dev/ask";
 
 
 // ------------------------------
@@ -174,3 +174,4 @@ questionInput.addEventListener("keydown", (e) => {
     askQuestion();
   }
 });
+
